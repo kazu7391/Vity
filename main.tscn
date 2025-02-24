@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dl62uu1ted2vx"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_m8pmv"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_m8pmv")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 392.0
+offset_top = 133.0
+offset_right = 692.0
+offset_bottom = 241.0
+text = "PLAY"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 398.0
+offset_top = 377.0
+offset_right = 698.0
+offset_bottom = 485.0
+text = "QUIT
+"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
