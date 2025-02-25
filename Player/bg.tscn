@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqwrxtfs1cudj"]
+
+[ext_resource type="Texture2D" uid="uid://drif6x0g5gl1s" path="res://Assets/sunny-land/assets/environment/back.png" id="1_b5e7s"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(3, 2.7)
+texture = ExtResource("1_b5e7s")
